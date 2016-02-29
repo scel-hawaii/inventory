@@ -1,1 +1,1 @@
-rails g scaffold Item name:string location:string compartment:string type:string description:text quantity:integer manufacturer:string distributor:string notes:text image_url:string manual_url:string
+rails g scaffold Distributor name:string url:string notes:text contact_name:string contact_email:string email:string phone_number:string image_url:string

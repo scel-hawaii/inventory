@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @distributor.name %>
+</p>
+
+<p>
+  <strong>Url:</strong>
+  <%= @distributor.url %>
+</p>
+
+<p>
+  <strong>Notes:</strong>
+  <%= @distributor.notes %>
+</p>
+
+<p>
+  <strong>Contact name:</strong>
+  <%= @distributor.contact_name %>
+</p>
+
+<p>
+  <strong>Contact email:</strong>
+  <%= @distributor.contact_email %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @distributor.email %>
+</p>
+
+<p>
+  <strong>Phone number:</strong>
+  <%= @distributor.phone_number %>
+</p>
+
+<p>
+  <strong>Image url:</strong>
+  <%= @distributor.image_url %>
+</p>
+
+<%= link_to 'Edit', edit_distributor_path(@distributor) %> |
+<%= link_to 'Back', distributors_path %>
