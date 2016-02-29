@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160229083400) do
+ActiveRecord::Schema.define(version: 20160229084143) do
 
   create_table "items", force: :cascade do |t|
     t.string   "name"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20160229083400) do
     t.string   "part_number"
     t.string   "url"
     t.string   "package_type"
+    t.string   "item_type"
   end
 
 end
