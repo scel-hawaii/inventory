@@ -2,13 +2,24 @@
 <html>
 <head>
   <title>Inventory</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <style>
+    body {
+        min-height: 2000px;
+        padding-top: 70px;
+    }
+  </style>
 </head>
 <body>
 
-<%= yield %>
+<%= render "layouts/navbar" %>
+
+<div class="container">
+    <%= yield %>
+</div>
 
 </body>
 </html>
