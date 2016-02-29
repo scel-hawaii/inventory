@@ -22,4 +22,4 @@ test:
 
 production:
   <<: *default
-  database: /home/reishawaii/webapps/inventory/db
+  database: /home/reishawaii/webapps/inventory/db/production.sqlite3
