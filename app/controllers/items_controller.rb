@@ -17,6 +17,8 @@ class ItemsController < ApplicationController
   # GET /items/1
   # GET /items/1.json
   def show
+    @changes = []
+    @changes = @item.versions.limit(5) if @item.versions.exists?
   end
 
   # GET /items/new
