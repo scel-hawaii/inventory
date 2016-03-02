@@ -1,6 +1,9 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Listing Inventory Items</h1>
+<div>
+    <h1>Inventory <small><%=@category_name%></small> </h1>
+    <span class='pull-right'><p><%= link_to 'Add New Item', new_item_path %></p></span>
+</div>
 
 <table class="table table-bordered table-striped table-condensed">
   <thead>
@@ -35,4 +38,3 @@
 
 <br>
 
-<%= link_to 'New Item', new_item_path %>

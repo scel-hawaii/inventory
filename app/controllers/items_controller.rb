@@ -4,11 +4,14 @@ class ItemsController < ApplicationController
   # GET /items
   # GET /items.json
   def index
-    @items = Item.all
+    @items = Item.where(nil)
+    @items = @items.category_is(params[:category_is]) if params[:category_is].present?
+    @category_name = params[:category_is] + "s" if params[:category_is].present?
   end
 
   def categories
     @items = Item.all
+    @categories = ItemCategory.all
   end
 
   # GET /items/1
