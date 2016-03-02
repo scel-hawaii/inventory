@@ -1,7 +1,7 @@
 class HomeController < ApplicationController
   def index
-    @num_items = 0
+    @num_items = Item.count
     @num_manufacturers = 0
-    @num_vendors = 0
+    @num_vendors = Distributor.count
   end
 end
