@@ -9,8 +9,19 @@
 ItemCategory.create([
   {name: 'Capacitor'},
   {name: 'Microcontroller'},
-  {name: 'Op Amp'},
+  {name: 'OpAmp'},
   {name: 'Diode'},
+  {name: 'Sensor'},
+  {name: 'EEPROM'},
+  {name: 'ADC'},
+  {name: 'Oscillator'},
+  {name: 'LED'},
+  {name: 'Switch'},
+  {name: 'Button'},
+  {name: 'Resistor'},
+  {name: 'Regulator'},
+  {name: 'Charging'},
+  {name: 'TBC'},
   {name: 'Other'}
 ]);
 
