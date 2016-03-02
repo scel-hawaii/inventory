@@ -11,7 +11,7 @@ class ItemsController < ApplicationController
 
   def categories
     @items = Item.all
-    @categories = ItemCategory.all
+    @categories = ItemCategory.all.order(:name)
   end
 
   # GET /items/1
