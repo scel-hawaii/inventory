@@ -34,7 +34,8 @@
                 </li>
             </ul>
             <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">User</a></li>
+                <%= render 'layouts/dropdown_logged_in' if user_signed_in?%>
+                <%= render 'layouts/dropdown_not_logged_in' if not user_signed_in?%>
             </ul>
         </div><!--/.nav-collapse -->
     </div>
