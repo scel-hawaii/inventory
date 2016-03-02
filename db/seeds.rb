@@ -5,3 +5,13 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+ItemCategory.create([
+  {name: 'Capacitor'},
+  {name: 'Microcontroller'},
+  {name: 'Op Amp'},
+  {name: 'Diode'},
+  {name: 'Other'}
+]);
+
+
