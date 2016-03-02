@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :item_categories
   resources :distributors
   get 'items/categories', to: 'items#categories'

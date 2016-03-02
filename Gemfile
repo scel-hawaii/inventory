@@ -35,6 +35,9 @@ gem 'capistrano-rails', group: :development
 # Use paper-trail to keep a history of changes
 gem 'paper_trail'
 
+# Use devise for authentication
+gem 'devise'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
