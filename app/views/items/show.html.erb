@@ -66,7 +66,7 @@
 <strong> Recent Changes </strong>
 <ol>
     <% @changes.each do | change | %>
-        <li><%=change.created_at%> -- <%= User.find(change.whodunnit).email %></li>
+        <li><%=change.created_at%>: <%= if not change.whodunnit.nil? then User.find(change.whodunnit).email end %></li>
     <% end %>
 </ol>
 </p>
