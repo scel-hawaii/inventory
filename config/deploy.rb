@@ -9,7 +9,6 @@ set :repo_url, 'git@github.com:scel-hawaii/inventory.git'
 
 # Default deploy_to directory is /var/www/my_app_name
 # set :deploy_to, '/var/www/my_app_name'
-set :deploy_to, '/home/reishawaii/webapps/inventory_app_2'
 
 # Default value for :scm is :git
 # set :scm, :git

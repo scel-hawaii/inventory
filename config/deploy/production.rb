@@ -12,6 +12,7 @@ role :web, %w{reishawaii@web446.webfaction.com}
 role :db,  %w{reishawaii@web446.webfaction.com}
 set :rails_env, "production"
 
+set :deploy_to, '/home/reishawaii/webapps/inventory_app_2'
 
 set :default_env, {
   'RUBYLIB' => "#{deploy_to}/lib",
