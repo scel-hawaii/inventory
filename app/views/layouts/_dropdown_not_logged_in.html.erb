@@ -4,6 +4,7 @@
         User <span class="caret"></span></a>
     <ul class="dropdown-menu">
         <li>
+            <%= link_to "Sign in with Google", user_omniauth_authorize_path(:google_oauth2) %>
             <%= link_to "Sign In", new_user_session_path %>
         </li>
     </ul>
