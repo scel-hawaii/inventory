@@ -12,6 +12,15 @@ role :web, %w{reishawaii@web446.webfaction.com}
 role :db,  %w{reishawaii@web446.webfaction.com}
 set :rails_env, "production"
 
+
+set :default_env, {
+  'RUBYLIB' => "#{deploy_to}/lib",
+  'GEM_HOME' => "#{deploy_to}/gems",
+  'PATH' => "#{deploy_to}/bin:$PATH",
+  'RAILS_ENV' => "production"
+}
+
+
 # role-based syntax
 # ==================
 
